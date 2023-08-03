@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrudApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Start Title -->
+<div class="title">
+<h1 style="font-size: 40px;">CRUDS</h1>
+<P style="font-size: 22px; font-weight: bold;">PRODUCT MANAGMENT SYSTEM</P>
+</div>
+<!-- End Title -->
+
+    <!-- Start Container -->
+<div class="container">
+<div class="box">
+<!-- Start Inputs -->
+<div class="inputs">
+    <p class="TitleMsg">Please fill in this field</p>
+    <input type="text" id="title" placeholder="Name Of Product" required>
+    <p class="PriceMsg">Please fill in this field</p>
+    <input type="number" id="price" placeholder="Price"onkeyup="get_total()" required>
+    <input type="number" id="fees" placeholder="Fees"onkeyup="get_total()">
+    <input type="number" id="ads" placeholder="ADS"onkeyup="get_total()">
+    <input type="number" id="discount" placeholder="Discount" onkeyup="get_total()">
+    <p id="total">Total: 00:00</p>
+    <input type="number" id="quantity" placeholder="Quantity">
+    <p class="CategoryMsg">Please fill in this field</p>
+    <input type="text" id="category" placeholder="Category" required>
+    <button id="create">Create</button>
+    <input type="search" id="search" placeholder="Search" onkeyup="SearchPro(this.value)">
+    <button id="searchByTitle">Search By Title</button><button id="searchByCategory">Search By Category</button>
+    <button id="delAll">Delete All (1)</button>
+</div>
+<!-- End Inputs -->
+<!-- Start Outputs -->
+<table>
+<thead>
+    <tr>
+        <th>Id</th>
+        <th>Tit.</th>
+        <th>Pri.</th>
+        <th>Dis.</th>
+        <th>Catg.</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+</thead>
+
+<tbody id="tbody">
+
+</tbody>
+
+</table>
+<!-- End Outputs -->
+</div>
+</div>
+    <!-- End Container -->
+<script src="main.js"></script>
+</body>
+</html>
