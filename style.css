@@ -108,3 +108,17 @@ margin-bottom: 5px;
 display: none;
 }
 /* End Container Style */
+
+/* Start attribution */
+.attribution{
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #fff;
+}
+.attribution a{
+color:mediumaquamarine;
+text-decoration: none;
+}
+/* End attribution */
